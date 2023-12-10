@@ -1,3 +1,8 @@
+# CRUD Operations
+
+Created a React JS web application for CRUD Operations. Used createAsyncThunk from React Redux Toolkit.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
