@@ -11,12 +11,9 @@ const Update = () => {
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 
-  const { users, loading } = useSelector((store) => store.userDetail);
+  const { users } = useSelector((store) => store.userDetail);
 
   useEffect(() => {
-    console.log("printing from useState");
-    console.log("id = ", id);
-    console.log("updateData = ", updateData);
     if (id) {
       const [user] = users.filter((user) => user.id === id);
       setUpdateData(user);
@@ -32,8 +29,6 @@ const Update = () => {
 		dispatch(updateUser(updateData));
 		navigate("/read");
 	}
-
-  console.log(updateData);
 
   return (
     <div>
